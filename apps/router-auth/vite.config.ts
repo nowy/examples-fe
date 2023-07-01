@@ -7,7 +7,7 @@ export default defineConfig({
   cacheDir: '../../node_modules/.vite/router-auth',
 
   server: {
-    port: 4200,
+    port: 4220,
     host: 'localhost',
   },
 
