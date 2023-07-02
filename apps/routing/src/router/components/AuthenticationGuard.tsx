@@ -1,5 +1,5 @@
 import type { FC, ReactElement } from 'react';
-import { useAuth } from '../../domains/auth/providers/auth';
+import { useAuth } from '@/domains/auth';
 import { ProtectedRoute } from './ProtectedRoute';
 
 export type AuthenticationGuardProps = {

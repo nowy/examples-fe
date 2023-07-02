@@ -5,7 +5,7 @@ import {
   useContext,
   useState,
 } from 'react';
-import { mockAuthService, User } from '../services/mockAuthService';
+import { mockAuthService, User } from '../services';
 
 const AuthContext = createContext<{
   user: User | null;

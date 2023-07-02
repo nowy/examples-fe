@@ -1,6 +1,6 @@
 import { RouterProvider } from 'react-router-dom';
-import { AuthProvider } from './domains/auth/providers/auth';
-import { router } from './router/router';
+import { AuthProvider } from '@/domains/auth/providers/auth';
+import { router } from '@/router/router';
 
 const App = () => (
   <AuthProvider>
