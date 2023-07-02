@@ -4,10 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import { MainLayout } from '@/layouts/MainLayout';
-import {
-  AuthenticationGuard,
-  UnAuthenticationGuard,
-} from './components/AuthenticationGuard';
+import { AuthenticationGuard } from './components/AuthenticationGuard';
 import { HomePage } from '@/domains/home';
 import { SettingsPage } from '@/domains/settings';
 import { LoginPage, LogoutPage } from '@/domains/auth';
@@ -23,8 +20,8 @@ const routes = createRoutesFromElements(
       <Route path="logout" element={<LogoutPage />} />
     </Route>
 
-    {/* Login page in case unauthenticated */}
-    <Route element={<UnAuthenticationGuard />}>
+    {/* Only allow login if the user is unauthenticated */}
+    <Route element={<AuthenticationGuard guardType="unauthenticated" />}>
       <Route path="login" element={<LoginPage />} />
     </Route>
 
