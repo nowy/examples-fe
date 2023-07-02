@@ -10,4 +10,4 @@ pnpm i
 
 ## Running an example app
 
-To start the development server run `npx nx serve [app-name]` (e.g. `nx serve router-auth`). Open your browser and navigate to the URL provided in the terminal. Happy coding!
+To start the development server run `npx nx serve [app-name]` (e.g. `nx serve routing`). Open your browser and navigate to the URL provided in the terminal. Happy coding!

@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/router-auth',
+  cacheDir: '../../node_modules/.vite/routing',
 
   server: {
     port: 4220,

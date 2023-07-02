@@ -1,4 +1,4 @@
-# Protecting Routes with React Router v6
+# Routing
 
 This is a repository with front end code examples for https://fe.engineer/routing/protected-routes.
 
@@ -13,4 +13,4 @@ pnpm i
 
 ## Running an example app
 
-To start the development server run `nx serve router-auth`. Open your browser and navigate to the URL provided in the terminal. Happy coding!
+To start the development server run `nx serve routing`. Open your browser and navigate to the URL provided in the terminal. Happy coding!

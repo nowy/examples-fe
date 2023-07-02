@@ -1,15 +1,17 @@
 {
-  "name": "router-auth",
+  "name": "routing",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/router-auth/src",
+  "sourceRoot": "apps/routing/src",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/router-auth"
+        "outputPath": "dist/apps/routing"
       },
       "configurations": {
         "development": {
@@ -24,15 +26,15 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "router-auth:build"
+        "buildTarget": "routing:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "router-auth:build:development",
+          "buildTarget": "routing:build:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "router-auth:build:production",
+          "buildTarget": "routing:build:production",
           "hmr": false
         }
       }
@@ -41,36 +43,42 @@
       "executor": "@nx/vite:preview-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "router-auth:build"
+        "buildTarget": "routing:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "router-auth:build:development"
+          "buildTarget": "routing:build:development"
         },
         "production": {
-          "buildTarget": "router-auth:build:production"
+          "buildTarget": "routing:build:production"
         }
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/apps/router-auth"],
+      "outputs": [
+        "coverage/apps/routing"
+      ],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/router-auth"
+        "reportsDirectory": "../../coverage/apps/routing"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/router-auth/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "apps/routing/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "router-auth:build"
+        "buildTarget": "routing:build"
       }
     }
   },
