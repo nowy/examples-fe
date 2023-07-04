@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '@/domains/auth';
 
-export const Navigation = () => {
+export const Navbar = () => {
   const { user } = useAuth();
 
   return (
