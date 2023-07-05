@@ -6,7 +6,13 @@ export const Navbar = () => {
       <nav>
         <ul>
           <li>
+            <Link to="/">REST Example</Link>
+          </li>
+          <li>
             <Link to="/trpc">tRPC Example</Link>
+          </li>
+          <li>
+            <Link to="/graphql">GraphQL Example</Link>
           </li>
         </ul>
       </nav>

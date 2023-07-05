@@ -1,7 +1,7 @@
-import { useTrpcUsers } from '../hooks/useTrpcUsers';
+import { useRestUsers } from '../hooks/useRestUsers';
 
-export const TrpcUsersPage = () => {
-  const { data: users, isLoading, error } = useTrpcUsers();
+export const RestUsersPage = () => {
+  const { data: users, isLoading, error } = useRestUsers();
 
   if (isLoading) return <div>Loading...</div>;
 

@@ -4,7 +4,7 @@ import { httpBatchLink } from '@trpc/client';
 import { Outlet } from 'react-router-dom';
 
 export const trpcClient = trpc.createClient({
-  links: [httpBatchLink({ url: '/api' })],
+  links: [httpBatchLink({ url: '/api/trpc' })],
 });
 export const queryClient = new QueryClient();
 

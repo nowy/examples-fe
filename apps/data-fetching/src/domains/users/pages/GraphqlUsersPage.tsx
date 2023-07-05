@@ -1,7 +1,7 @@
-import { useTrpcUsers } from '../hooks/useTrpcUsers';
+import { useGraphqlUsers } from '../hooks';
 
-export const TrpcUsersPage = () => {
-  const { data: users, isLoading, error } = useTrpcUsers();
+export const GraphqlUsersPage = () => {
+  const { data: users, isLoading, error } = useGraphqlUsers();
 
   if (isLoading) return <div>Loading...</div>;
 

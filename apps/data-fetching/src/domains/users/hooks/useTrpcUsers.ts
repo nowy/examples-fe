@@ -1,5 +1,5 @@
 import { trpc } from '@/domains/trpc';
 
-export const useUsers = () => {
+export const useTrpcUsers = () => {
   return trpc.user.list.useQuery();
 };
