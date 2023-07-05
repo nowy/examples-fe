@@ -2,7 +2,11 @@
   "name": "@examples-fe/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:data-fetching": "nx run-many --targets=serve --projects=api,data-fetching",
+    "start:state-management": "nx serve state-management",
+    "start:routing": "nx serve routing"
+  },
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.7.16",
