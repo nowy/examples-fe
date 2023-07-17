@@ -3,7 +3,7 @@ import {
   createRoutesFromElements,
   Route,
 } from 'react-router-dom';
-import { MainLayout } from '@/layouts/MainLayout';
+import { MainLayout } from '@/layouts/main/MainLayout';
 import { AuthenticationGuard } from './components/AuthenticationGuard';
 import { HomePage } from '@/domains/home';
 import { SettingsPage } from '@/domains/settings';
